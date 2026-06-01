@@ -1,0 +1,14 @@
+{
+  "name": "bulk-mail-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Complete MERN stack bulk mail application with email history.",
+  "scripts": {
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm start --prefix client\"",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
